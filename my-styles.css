@@ -1,0 +1,164 @@
+/* CSS document */
+font-family: sans-serif;
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+	margin: 0;
+	font-family: "Helvetica", sans-serif;
+	color: #899095;
+	font-weight: 300;
+  line-height: 1;
+}
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-weight: 300;
+  line-height: 1.1;
+  color: #899095;
+}
+
+h1,
+.h1,
+h2,
+.h2,
+h3,
+.h3 {
+  margin-top: 5px;
+  margin-bottom: 10px;
+  text-align: center;
+  font-size: 30px;
+}
+
+h4,
+.h4,
+h5,
+.h5,
+h6,
+.h6 {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+h1,
+.h1 {
+  font-size: 36px;
+  font-weight: lighter;
+  text-align: right;
+}
+h2,
+.h2 {
+  font-size: 30px;
+  text-align: left;
+  padding-left: 0px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  width: 100%;
+}
+h3,
+.h3 {
+  font-size: 30px;
+}
+h4,
+.h4 {
+  font-size: 18px;
+  text-align: right;
+}
+h5,
+.h5 {
+  font-size: 14px;
+}
+h6,
+.h6 {
+  font-size: 12px;
+}
+p {
+  margin: 0 0 10px;
+
+}
+  img, embed, object, video {
+  max-width: 100%;
+}
+
+.logo {
+	margin: 10px;
+}
+
+.main-img {
+	width: 100%
+}
+a {
+  text-align: center;
+  color: #899095;
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-grow: 1;
+  flex-shrink: 1;
+  margin: 0 auto;
+  width: 90%;
+  max-width: 960px;
+}
+
+.featured {
+  text-align: center;
+ /* default 0 */
+}
+
+/* Responsive rules start here */
+      @media screen and (min-width: 300px) {
+
+        .header_logo {width: 40%; order:0;}
+        .h1 {width: 60%; order:1;}
+        .h2 {width: 60%; order:2;}
+        .main-img {width:100%; order:3;}
+        .featured {width:100%; order:4;}
+      }
+
+      @media screen and (min-width: 768px) {
+        .header_logo {width: 40%; order:0;}
+        .h1 {width: 60%; order:1;}
+        .h2 {width: 60%; order:2;}
+        .featured {width:33.3%; order:3;}
+      }
